@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CreateSqlit3\\": "CreateSqlite3"
+            "test\\": "CreateSqlite3"
         }
     }
 }

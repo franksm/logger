@@ -3,7 +3,7 @@ namespace CreateSqlite3;
 
 class CreateSqlite3{
 
-    function desc(){
+    public function desc(){
         $pdo = new PDO('sqlite:syslog.sqlite3');
         $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
