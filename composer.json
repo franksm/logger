@@ -11,7 +11,9 @@
     },
     "autoload": {
         "psr-4": {
-            "logger\\": "src/"
+            "logger\\": "src",
+            "Php\\Exam":"Logger",
+            "Psr\\Log":"LoggerInterface"
         }
     }
 }
