@@ -11,6 +11,6 @@
     },
     "autoload": {
     "psr-4": {
-      "db\\CreateSqlit3\\": "db/CreateSqlite3"
+      "CreateSqlit3\\": "CreateSqlite3"
     }
 }

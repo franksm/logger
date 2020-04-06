@@ -1,4 +1,5 @@
 <?php
+
 class CreateSqlite3{
     $pdo = new PDO('sqlite:syslog.sqlite3');
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
