@@ -1,5 +1,10 @@
 {
-    "autoload": {
-        "files": ["syslog.sqlite3"]
-    }
+    "name": "frank.huang/logger",
+    "authors": [
+        {
+            "name": "franksm",
+            "email": "franksmhuang@gmail.com"
+        }
+    ],
+    "require": {}
 }
