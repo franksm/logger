@@ -1,4 +1,5 @@
 <?php
+namespace CreateSqlite3;
 
 class CreateSqlite3{
     $pdo = new PDO('sqlite:syslog.sqlite3');
