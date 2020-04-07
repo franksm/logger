@@ -1,19 +1,5 @@
 {
-    "name": "frank.huang/logger",
-    "authors": [
-        {
-            "name": "franksm",
-            "email": "franksmhuang@gmail.com"
-        }
-    ],
     "require": {
-        "php": ">=7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "logger\\": "src",
-            "Php\\Exam":"Logger",
-            "Psr\\Log":"LoggerInterface"
-        }
+        "psr/log": "^1.1"
     }
 }

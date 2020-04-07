@@ -3,7 +3,6 @@
 use Psr\Log\LoggerInterface;
 use Php\Exam\Logger;
 
-include_once("LoggerInterface.php");
 include_once("Logger.php");
 
 class MyApp1
