@@ -1,5 +1,6 @@
 <?php
 namespace CreateSqlite3;
+use \PDO;
 
 class CreateSqlite3{
 
@@ -15,7 +16,8 @@ class CreateSqlite3{
     }
 }
 
-
+$test = new CreateSqlite3();
+$test->desc();
 
 
 
