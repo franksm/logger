@@ -1,6 +1,5 @@
 <?php
 namespace Php\Exam;
-require '../vendor/autoload.php';
 
 use Psr\Log\LoggerInterface;
 use \PDO;
