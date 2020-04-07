@@ -31,11 +31,11 @@ class Logger implements LoggerInterface
     }
     /** use */
     public function critical($message, array $context = array()){
-        $this->insert(__FUNCTION__, $message);
+        $this->log(__FUNCTION__, $message);
     }
     /** use */
     public function error($message, array $context = array()){
-        $this->insert(__FUNCTION__, $message);
+        $this->log(__FUNCTION__, $message);
     }
 
     public function warning($message, array $context = array()){
@@ -43,28 +43,24 @@ class Logger implements LoggerInterface
     }
     /** use */
     public function notice($message, array $context = array()){
-        $this->insert(__FUNCTION__, $message);
+        $this->log(__FUNCTION__, $message);
     }
     /** use */
     public function info($message, array $context = array()){
-        $this->insert(__FUNCTION__, $message);
+        $this->log(__FUNCTION__, $message);
     }
     /** use */
     public function debug($message, array $context = array()){
-        $this->insert(__FUNCTION__, $message);
+        $this->log(__FUNCTION__, $message);
     }
-
+    /** use */
     public function log($level, $message, array $context = array()){
-        return;
-    }
-
-    function insert($stage, $message){
         $sql = "INSERT Into logs(level,message) Values (:level,:message)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->bindValue(':level',$stage);
+        $stmt->bindValue(':level',$level);
         $stmt->bindValue(':message',$message);
         $stmt->execute();
-        echo  "$stage\t$message\n";
+        echo  "$level\t$message\n";
     }
 
 }
